@@ -13,8 +13,8 @@ export default {
     <div class="sidebar bg-black  m-0 p-0"  :class="{'bg-close' :collapsed}" :style="{width: sidebarWidth}">
         <div class="flex h-full w-full m-0 p-0">
             <div class="flex h-full w-4/5 pt-1" :class="{'view-close' :collapsed}">
-                <router-link to="/">Home</router-link> |
-                <router-link to="/about">About</router-link>
+                <router-link to="/"><span class="px-2">Home</span></router-link> |
+                <router-link to="/about"><span class="px-2">About</span></router-link>
             </div>
             <div class="flex items-center bg-blue-600   m-0 p-0 h-full" >
                 <span class="collapse-icon mx-auto p-1" :class="{ 'rotate-180' :collapsed}" @click="toggleSidebar">
